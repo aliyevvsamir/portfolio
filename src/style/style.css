@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    padding-right: 30px;
+    opacity: 0.8;
+    background: rgb(44, 25, 25);
+}
+
+header h1 {
+    color: rgb(220, 231, 214);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar ul {
+    margin-top: 20px;
+    display:flex;
+}
+
+
+
+.navbar li {
+    padding: 5px;
+}
+
+.navbar a {
+    color: rgb(220, 231, 214);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #47ff7e
+}
+
+/* Main */
+
+
+
+
+
+/* Section About */
+
+#about {
+    display: flex;
+    width: 100%;
+    background-image: url("img2.png");
+
+    height: 550px;
+}
+
+.about-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(2, 252, 231);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+}
+.about-info {
+
+    justify-content: flex-start;
+    padding-left: 20px;
+    width: 50%;
+    margin-top: 30px;
+}
+h2{
+    margin-top: 30px;
+    line-height: 1.4;
+    font-size: 50px;
+
+}
+span{
+    color: rgb(156, 11, 11);
+    font-weight: bold;
+    font-size: 60px;
+    margin:20px 40px 20px 50px;
+
+
+}
+.about-info p {
+    margin-top: 20px;
+    line-height: 1.4;
+    font-size: 20px;
+}
+.about-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img img{
+
+    width: 600px;
+    height: 400px;
+}
+/* Section portfolio */
+#portfolio{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+}
+.portfolio-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(252, 164, 2);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+
+}
+.card{
+    width: 450px;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    margin-top: 80px;
+
+}
+.card:hover .context p{
+    transform: scale(.9);
+    opacity: 1;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
+}
+.card:hover:after{
+    height: 380px;
+}
+.card:hover .context {
+    margin-bottom: 0px;
+    opacity: 1;
+}
+.card:hover img{
+    transform: scale(.9);
+}
+.card:after{
+    color: #fff;
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+.card img{
+    width: 400px;
+    z-index: 10;
+    transition: all .25s ease;
+}
+.card .context {
+    z-index: 30;
+    position: absolute;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 90px;
+    margin-left: 5px;
+    opacity: 0;
+  
+}
+.card h2{
+    width: 306px;
+    color: honeydew;
+}
+.card .context p{
+    color: antiquewhite;
+    font-size: .8rem;
+    opacity: 0;
+    margin-left: 25px;
+    margin-top: -170px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+.card .context p button{
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 30px;
+    outline: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+}
+.card .context p button:hover{
+    background: rgb(23, 192, 37);
+    color: rgb(241, 236, 236);
+}
+.context p{
+    width: 250px;
+}
+
+/* section blog*/
+#blog{
+    font-family: "Baloo Chettan 2", cursive;
+    background: radial-gradient(circle,
+    rgba(78,171,255,1) 25%,
+    rgba(0, 100, 255, 1) 100
+    );
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 220, 210);
+}
+.blog-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(238, 106, 73);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+}
+.wrapper{
+    margin-top: 90px;
+    width: 100%;
+    height: 410px;
+    position: relative;
+    background-color: var(--wrapper-background-c);
+    box-shadow: 0 0 80px var(--wrapper-shadow-c);
+}
+.images-area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+}
+.images-area img{
+    width: 100%;
+    transition: 0.3s cubic-bezier(0.79, 0.03, 0, 0.99);
+}
+.button-area{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.button-area > div{
+    color: var(--white-c);
+    background-color: var(--buttons-background-c);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.button-area > div:first-child{
+    border-radius: 0 5px 5px 0;
+    margin-left: -100px;
+}
+.button-area > div:last-child{
+    border-radius: 5px 0 0 5px ;
+    margin-right: -100px;
+}
+.wrapper:hover .button-area > div:first-child{
+    margin-left: 0;
+}
+
+.wrapper:hover .button-area > div:last-child{
+    margin-right: 0;
+}
+.button-area div:hover:not(div.disabled){
+    background-color: var(--button-active-background-c);
+}
+.button-area div:not(div.disabled):active{
+    opacity: 0.7;
+}
+.button-area > div.disabled{
+    cursor: no-drop;
+    opacity: 0.3;
+}
+.button-area div i{
+    font-size: 65px;
+}
+.button-area div i:hover{
+    color: bisque;
+}
+/* Contact */
+#contact{
+    display: flex;
+    height: 310px;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+
+}
+
+#contact form{
+
+    width: 60%;
+
+    margin: 20px 0 0 40px;
+}
+#contact form h3{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    color: rgb(21, 212, 165);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+}
+form button:hover{
+    transform: scale(1.1);
+}
+.right-side{
+    padding-top: 80px;
+    color: rgb(21, 212, 165);
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.font-side{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 35px;
+    color: rgb(21, 212, 165);
+
+}
+.font-side i{
+    margin-left: 20px;
+    color: rgb(21, 212, 165);
+
+}
+.font-side a:hover{
+    transform: scale(.9);
+}
+footer{
+    text-align: center;
+    color: grey;
+    font-size: 25px;
+    height: 35px;
+    padding-top: 5px;
+    background-color: lightgray;
+}

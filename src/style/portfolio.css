@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!--Header start-->
+    <header>
+        <div class="logo-content">
+            <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFR1bKqcMw2QAVW0eVdlEZL9mLw5dQbSc7iw&usqp=CAU" alt="web">
+            <h1>Samir Aliyev</h1>
+        </div>
+        <div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <!--Header end-->
+
+    <!--Main start-->
+    <main>
+        <section id="about">
+
+            <div class="about-header">ABOUT</div>
+            <div class="about-info">
+                <h2>Welcome to my</h2>
+                 <span><i>Portfolio</i></span>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Ipsa ut eaque praesentium minima, nobis soluta aspernatur 
+           molestiae quia ab veniam ea pariatur saepe dolores possimus 
+           minus illum nisi. Veniam, excepturi?</p>
+
+        </div>
+        <div class="about-img">
+            <img src="./src/style/img5.png" alt="">
+        </div>
+        </section>
+
+        <section id="portfolio">
+
+            <div class="portfolio-header">PORTFOLIO</div>
+
+                <div class="card">
+            <img  src="./src/style/cronometer.jpg" alt="">
+            <div class="context">
+                <h2>Chronometr</h2>
+                <p>HTML/CSS/JS
+                    <button>Learn more</button>
+                </p>
+            </div>
+             </div>
+
+             <div class="card">
+                <img  src="./src/style/html-img.png" alt="">
+                <div class="context">
+                    <h2>Search Movie</h2>
+                    <p>HTML/CSS/JS
+                        <button>Learn more</button>
+                    </p>
+                </div>
+                 </div><div class="card">
+                    <img  src="./src/style/calculator.webp" alt="">
+                    <div class="context">
+                        <h2>Calculator</h2>
+                        <p>HTML/CSS/JS
+                            <button>Learn more</button>
+                        </p>
+                    </div>
+                     </div>
+         
+                                                
+           
+       
+           
+        </section>
+
+        <section id="blog">
+            <div class="blog-header">BLOG</div>
+            <div class="wrapper">
+
+                <div class="images-area" >
+
+                    <a href="#"><img class="firstImage" src="./src/style/blog1.jpg" alt=""></a>
+                    
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://www.abprojeyonetimi.com/wp-content/uploads/2017/06/Oli-Blog-2.jpg" alt=""></a>
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://tebapit.com/wp-content/uploads/2021/04/GettyImages-974683580-da68f71779264a1ab93a91df63cc517c.jpg" alt=""></a>
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6TjnomZVETY3GoEYoZIAG1vv9QbtEw16eEQ&usqp=CAU" alt=""></a>
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://egegen.com/blog/wp-content/uploads/2020/12/web-tasarim-icin-kullanilan-programlar-380x220.jpg" alt=""></a>
+                </div>
+                    
+                <!--Button-->
+                <div class="button-area">
+                    <div class="previous-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        
+        <div><h3>CONTACT</h3></div>
+        <div class="footer-left">
+       <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+       <a href="#"><i class="fa-brands fa-github"></i></a>
+       <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+    </div>
+       <div class="footer-right">
+        <p>+994706631310</p> 
+        <p>samirali1611@gmail.com</p>
+        
+    </div>
+    <div class="copy"><p>Copyright  Ⓒ  2022 by ADS. All rights reserved</p></div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    padding-right: 30px;
+    opacity: 0.8;
+    background: rgb(44, 25, 25);
+}
+
+header h1 {
+    color: rgb(220, 231, 214);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar ul {
+    margin-top: 20px;
+    display:flex;
+}
+
+
+
+.navbar li {
+    padding: 5px;
+}
+
+.navbar a {
+    color: rgb(220, 231, 214);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #47ff7e
+}
+
+/* Main */
+
+
+
+
+
+/* Section About */
+
+#about {
+    display: flex;
+    width: 100%;
+    background-image: url("img2.png");
+
+    height: 550px;
+}
+
+.about-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(2, 252, 231);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+}
+.about-info {
+
+    justify-content: flex-start;
+    padding-left: 20px;
+    width: 50%;
+    margin-top: 30px;
+}
+h2{
+    margin-top: 30px;
+    line-height: 1.4;
+    font-size: 50px;
+
+}
+span{
+    color: rgb(156, 11, 11);
+    font-weight: bold;
+    font-size: 60px;
+    margin:20px 40px 20px 50px;
+
+
+}
+.about-info p {
+    margin-top: 20px;
+    line-height: 1.4;
+    font-size: 20px;
+}
+.about-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img img{
+
+    width: 600px;
+    height: 400px;
+}
+/* Section portfolio */
+#portfolio{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+}
+.portfolio-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(252, 164, 2);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+
+}
+.card{
+    width: 450px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    margin-top: 60px;
+
+}
+.card:hover .context p{
+    transform: scale(.9);
+    opacity: 1;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
+}
+.card:hover:after{
+    height: 380px;
+}
+.card:hover .context {
+    margin-bottom: 0px;
+    opacity: 1;
+}
+.card:hover img{
+    transform: scale(.9);
+}
+.card:after{
+    color: #fff;
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+.card img{
+    width: 400px;
+    z-index: 10;
+    transition: all .25s ease;
+}
+.card .context {
+    z-index: 30;
+    position: absolute;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 90px;
+    margin-left: 5px;
+    opacity: 0;
+  
+}
+.card h2{
+    width: 306px;
+    color: honeydew;
+}
+.card .context p{
+    color: antiquewhite;
+    font-size: .8rem;
+    opacity: 0;
+    margin-left: 25px;
+    margin-top: -170px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+.card .context p button{
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 30px;
+    outline: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+}
+.card .context p button:hover{
+    background: rgb(23, 192, 37);
+    color: rgb(241, 236, 236);
+}
+.context p{
+    width: 250px;
+}
+
+/* section blog*/
+#blog{
+    font-family: "Baloo Chettan 2", cursive;
+    background: radial-gradient(circle,
+    rgba(78,171,255,1) 25%,
+    rgba(0, 100, 255, 1) 100
+    );
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 220, 210);
+}
+.blog-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(238, 106, 73);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+}
+.wrapper{
+    margin-top: 90px;
+    width: 100%;
+    height: 410px;
+    position: relative;
+    background-color: var(--wrapper-background-c);
+    box-shadow: 0 0 80px var(--wrapper-shadow-c);
+}
+.images-area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+}
+.images-area img{
+    width: 100%;
+    transition: 0.3s cubic-bezier(0.79, 0.03, 0, 0.99);
+}
+.button-area{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.button-area > div{
+    color: var(--white-c);
+    background-color: var(--buttons-background-c);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.button-area > div:first-child{
+    border-radius: 0 5px 5px 0;
+    margin-left: -100px;
+}
+.button-area > div:last-child{
+    border-radius: 5px 0 0 5px ;
+    margin-right: -100px;
+}
+.wrapper:hover .button-area > div:first-child{
+    margin-left: 0;
+}
+
+.wrapper:hover .button-area > div:last-child{
+    margin-right: 0;
+}
+.button-area div:hover:not(div.disabled){
+    background-color: var(--button-active-background-c);
+}
+.button-area div:not(div.disabled):active{
+    opacity: 0.7;
+}
+.button-area > div.disabled{
+    cursor: no-drop;
+    opacity: 0.3;
+}
+.button-area div i{
+    font-size: 65px;
+}
+.button-area div i:hover{
+    color: bisque;
+}
+
+footer{
+    display: flex;
+    height: 270px;
+    text-align: center;
+    background-color: rgb(250, 237, 171);
+}
+footer div h3{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(0, 23, 126);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+}
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(4, 4, 56);
+    width: 40%;
+    padding: 40px 40px 0 80px;
+    font-size: 70px;
+    z-index: 10;
+    transition: all .25s ease;
+
+}
+.footer-left a{
+    margin-top: 80px;
+    margin-left: 20px;
+    color: rgb(5, 5, 41);
+}
+.footer-right {
+
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 40px;
+    margin-top: 80px;
+    margin-left: 90px;
+    color: darkblue;
+    line-height: 1.4;
+
+
+}
+.footer-right p{
+    height: 30px;
+    margin-left: 60px;
+
+}
+
+.footer-left a:hover i{
+    transform: scale(.7);
+}
+
+
+
+
+
+
+/*============================================*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!--Header start-->
+    <header>
+        <div class="logo-content">
+            <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFR1bKqcMw2QAVW0eVdlEZL9mLw5dQbSc7iw&usqp=CAU" alt="web">
+            <h1>Samir Aliyev</h1>
+        </div>
+        <div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <!--Header end-->
+
+    <!--Main start-->
+    <main>
+        <section id="about">
+
+            <div class="about-header">ABOUT</div>
+            <div class="about-info">
+                <h2>Welcome to my</h2>
+                 <span><i>Portfolio</i></span>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Ipsa ut eaque praesentium minima, nobis soluta aspernatur 
+           molestiae quia ab veniam ea pariatur saepe dolores possimus 
+           minus illum nisi. Veniam, excepturi?</p>
+
+        </div>
+        <div class="about-img">
+            <img src="./src/style/img5.png" alt="">
+        </div>
+        </section>
+
+        <section id="portfolio">
+
+            <div class="portfolio-header">PORTFOLIO</div>
+
+                <div class="card">
+            <img  src="./src/style/cronometer.jpg" alt="">
+            <div class="context">
+                <h2>Chronometr</h2>
+                <p>HTML/CSS/JS
+                    <button>Learn more</button>
+                </p>
+            </div>
+             </div>
+
+             <div class="card">
+                <img  src="./src/style/html-img.png" alt="">
+                <div class="context">
+                    <h2>Search Movie</h2>
+                    <p>HTML/CSS/JS
+                        <button>Learn more</button>
+                    </p>
+                </div>
+                 </div><div class="card">
+                    <img  src="./src/style/calculator.webp" alt="">
+                    <div class="context">
+                        <h2>Calculator</h2>
+                        <p>HTML/CSS/JS
+                            <button>Learn more</button>
+                        </p>
+                    </div>
+                     </div>
+         
+                                                
+           
+       
+           
+        </section>
+
+        <section id="blog">
+            <div class="blog-header">BLOG</div>
+            <div class="wrapper">
+
+                <div class="images-area" >
+
+                    <a href="#"><img class="firstImage" src="./src/style/blog1.jpg" alt=""></a>
+                    
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://www.abprojeyonetimi.com/wp-content/uploads/2017/06/Oli-Blog-2.jpg" alt=""></a>
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://tebapit.com/wp-content/uploads/2021/04/GettyImages-974683580-da68f71779264a1ab93a91df63cc517c.jpg" alt=""></a>
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6TjnomZVETY3GoEYoZIAG1vv9QbtEw16eEQ&usqp=CAU" alt=""></a>
+                </div>
+                <div class="images-area">
+                    <a href="#"><img src="https://egegen.com/blog/wp-content/uploads/2020/12/web-tasarim-icin-kullanilan-programlar-380x220.jpg" alt=""></a>
+                </div>
+                    
+                <!--Button-->
+                <div class="button-area">
+                    <div class="previous-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        
+        <div><h3>CONTACT</h3></div>
+        <div class="footer-left">
+        <form>
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+      
+      
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message" style="width:500px ;margin-top: 20px;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2" style="float:right; color:rgb(255, 254, 254);">Send message</button>
+      </form>
+    </div>
+       <div class="footer-right">
+        <p>+994706631310</p> 
+        <p>samirali1611@gmail.com</p>
+        
+    </div>
+    <div class="copy"><p>Copyright  Ⓒ  2022 by ADS. All rights reserved</p></div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
